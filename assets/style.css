@@ -1,0 +1,41 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#titulo {
+    margin: 50px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#ponto {
+    color: hsl(228, 88%, 48%);
+}
+
+/* Parte destinada ao main */
+
+main {
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+}
+h2 em {
+    color: #000;
+    font-weight: bold;
+}
+
+p {
+    font-size: 10px;
+    margin: 10px;
+    color: #000;
+
+}
+
+footer {
+    margin: 50px;
+}
