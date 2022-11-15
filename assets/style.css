@@ -4,7 +4,7 @@ body {
 
 #titulo {
     margin: 50px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -22,7 +22,7 @@ main {
     text-align: center;
 }
 h2 {
-    font-size: 20px;
+    font-size: 40px;
     color: hsl(0, 0%, 59%);
     font-weight: 300;
 }
@@ -35,7 +35,7 @@ h2 em {
 p {
     font-weight: bold;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 20px;
     margin: 10px;
     color: #000;
     margin-bottom: 20px;
@@ -43,30 +43,38 @@ p {
 }
 
 .email { 
-    width: 170px;
-    height: 20px;
-    padding-left: 15px;
+    margin-top: 20px;
+    width: 350px;
+    height: 40px;
+    padding-left: 25px;
     border-radius: 20px;
-    font-size: 8px;
+    font-size: 20px;
     font-weight: 300;
     border: 0.7px solid #000;
-    color: red;
+    color: #000;
     opacity: 14%;
     
 
 } 
 
 .submit {
-    width: 80px;
-    height: 23px;
+    width: 150px;
+    height: 40px;
     border: 0.7px solid hsl(228, 88%, 48%);
     border-radius: 20px;
     background-color: hsl(228, 88%, 48%);
     color: white;
-    font-size: 8px;
+    font-size: 20px;
     box-shadow: 0px 1px 9px hsl(0, 0%, 59%);
+}
+
+.submit:active {
+    width: 160px;
+    height: 45px;
+    opacity: 14%;
 }
 
 footer {
     margin: 50px;
+    text-align: center;
 }
