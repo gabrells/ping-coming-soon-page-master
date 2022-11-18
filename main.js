@@ -1,3 +1,15 @@
+function validateEmail(email)
+{
+ var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+ if (reg.test(email)){
+ return true; }
+ else{
+ return false;
+ }
+} 
+
+
+
 function imgGrafic(grafico1, grafico2) {
     return `
         <li class="grafico">
