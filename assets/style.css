@@ -1,9 +1,15 @@
 body {
     font-family: 'Libre Franklin', sans-serif;
+    padding-top: 5px;
+    margin: 40px 80px;
+    box-shadow: 0px 1px 9px hsl(0, 0%, 59%);
+    
 }
 
 #titulo {
     margin: 50px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -22,7 +28,7 @@ main {
     text-align: center;
 }
 h2 {
-    font-size: 40px;
+    font-size: 2em;
     color: hsl(0, 0%, 59%);
     font-weight: 300;
 }
@@ -35,7 +41,7 @@ h2 em {
 p {
     font-weight: bold;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1em;
     margin: 20px;
     color: #000;
     margin-bottom: 20px;
@@ -45,13 +51,12 @@ p {
 .email { 
     margin-top: 20px;
     width: 350px;
-    height: 40px;
+    height: 2em;
     padding-left: 25px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 300;
     border: 0.7px solid #000;
-    color: #000;
     opacity: 14%;
     
 
@@ -59,12 +64,12 @@ p {
 
 .submit {
     width: 150px;
-    height: 40px;
+    height: 2em;
     border: 0.7px solid hsl(228, 88%, 48%);
     border-radius: 20px;
     background-color: hsl(228, 88%, 48%);
     color: white;
-    font-size: 20px;
+    font-size: 1em;
     box-shadow: 0px 1px 9px hsl(0, 0%, 59%);
 }
 
@@ -114,4 +119,42 @@ p {
 footer {
     margin: 50px;
     text-align: center;
+}
+.roda-pe {
+    border-radius: 50px;
+}
+
+.insta {
+    width: 30px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.face {
+    width: 80px;
+    border-radius: 50px;
+}
+
+.tt {
+    width: 40px;
+    border-radius: 50px;
+}
+
+footer p {
+    font-size: 0.5em;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    #layout {
+
+       margin: 0px;
+       padding: 0%;
+    }
+    .painel {
+        margin: none;
+    }
 }
