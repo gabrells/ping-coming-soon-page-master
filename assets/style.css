@@ -36,7 +36,7 @@ p {
     font-weight: bold;
     font-weight: 300;
     font-size: 20px;
-    margin: 10px;
+    margin: 20px;
     color: #000;
     margin-bottom: 20px;
 
@@ -68,11 +68,48 @@ p {
     box-shadow: 0px 1px 9px hsl(0, 0%, 59%);
 }
 
+.email:hover {
+    opacity: 100%;
+}
+
 .submit:active {
     width: 160px;
     height: 45px;
     opacity: 14%;
 }
+
+/* layout */
+
+#layout {
+    
+    width: 570px;
+    height: 450px;
+    margin: 2%;
+    display: inline-block;
+    background-image: url(./layout.svg);
+    background-size: cover;
+}
+
+.painel {
+    padding-top: 50px;
+    padding-left: 140px;
+    margin: 20px;
+    animation: appear 5s;
+    opacity: 0;
+    animation: appear .5s forwards;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 4;
+    }
+}
+
+/* footer */
 
 footer {
     margin: 50px;
