@@ -88,8 +88,9 @@ p {
 #layout {
     
     width: 570px;
-    height: 450px;
+    height: 400px;
     margin: 2%;
+    margin-bottom: 0%;
     display: inline-block;
     background-image: url(./layout.svg);
     background-size: cover;
@@ -119,25 +120,15 @@ p {
 footer {
     margin: 50px;
     text-align: center;
-}
-.roda-pe {
-    border-radius: 50px;
+    padding-bottom: 10px;
 }
 
-.insta {
+.fa-brands {
     width: 30px;
     border-radius: 50px;
-    margin-bottom: 5px;
-}
+    margin-bottom: 10px;
+    color: blue;
 
-.face {
-    width: 80px;
-    border-radius: 50px;
-}
-
-.tt {
-    width: 40px;
-    border-radius: 50px;
 }
 
 footer p {
