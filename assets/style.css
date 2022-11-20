@@ -1,10 +1,16 @@
 body {
     font-family: 'Libre Franklin', sans-serif;
-    padding-top: 5px;
-    margin: 40px 80px;
-    box-shadow: 0px 1px 9px hsl(0, 0%, 59%);
-    
 }
+
+.body {
+    /* width: 1200px; */
+    padding-top: 5px;
+    margin: 3rem;
+    box-shadow: 0px 1px 9px hsl(0, 0%, 59%);
+    /* align-items: center; */
+   
+}
+
 
 #titulo {
     margin: 50px;
@@ -26,7 +32,12 @@ body {
 main {
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
+
 h2 {
     font-size: 2em;
     color: hsl(0, 0%, 59%);
@@ -38,7 +49,7 @@ h2 em {
     font-weight: 600;
 }
 
-p {
+.subtitulo {
     font-weight: bold;
     font-weight: 300;
     font-size: 1em;
@@ -48,29 +59,58 @@ p {
 
 }
 
-.email { 
+.form{
+    width: 100%;
+    max-width: 638px;
+    display:block;
+    position: relative;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.email { 
     width: 350px;
     height: 2em;
+    margin-left: 5%;
     padding-left: 25px;
     border-radius: 20px;
     font-size: 1em;
     font-weight: 300;
     border: 0.7px solid #000;
     opacity: 14%;
-    
-
+ 
 } 
 
 .submit {
     width: 150px;
     height: 2em;
+    margin-right: 5%;
     border: 0.7px solid hsl(228, 88%, 48%);
     border-radius: 20px;
     background-color: hsl(228, 88%, 48%);
     color: white;
     font-size: 1em;
     box-shadow: 0px 1px 9px hsl(0, 0%, 59%);
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.error_msg {
+    position: absolute;
+    bottom: -14px;
+    left: 1.95rem;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 0.79rem;
+    color: hsl(354, 100%, 66%);
+}
+
+.ok_msg {
+    font-weight: 300;
+    color: hsl(223, 87%, 63%);
 }
 
 .email:hover {
@@ -118,16 +158,29 @@ p {
 /* footer */
 
 footer {
-    margin: 50px;
     text-align: center;
     padding-bottom: 10px;
 }
 
 .fa-brands {
     width: 30px;
-    border-radius: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
     margin-bottom: 10px;
-    color: blue;
+    color: rgb(130, 130, 221);
+    border-radius: 50%;
+    transition: all .2s linear;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.fa-brands:hover{
+    width: 40px;
+    color: #000;
+    font-size: 1.5rem;
 
 }
 
@@ -139,7 +192,27 @@ footer p {
     body {
         width: 100%;
     }
+    .form {
+        display: inline;
+        align-items: center;
+        
+    }
+    .email{
+        width: 60%;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .submit {
+        margin-bottom: 1.5rem;
+        margin-left: 2.5rem;
 
+    }
+    .error_msg {
+        margin: 1rem;
+        margin-left: 3rem;
+
+    }
+    
     #layout {
 
        margin: 0px;
