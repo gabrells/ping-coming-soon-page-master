@@ -1,14 +1,39 @@
-function validateEmail(email)
-{
- var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
- if (reg.test(email)){
- return true; }
- else{
- return false;
- }
-} 
+const inputEmail = document.getElementById('email')
+const form = document.getElementById('form')
+const errorMsg = document.getElementById('errorMsg')
 
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    //Campo de validação
+    if (inputEmail.value === '') {
+        inputEmail.classList.add('input_error')
+        inputEmail.classList.add('margin_bottom')
+        errorMsg.innerHTML = 'Email cannot be empty'
+        return
 
+    } else if (inputEmail.value.indexOf("@") < 0) {
+        inputEmail.classList.add('input_error')
+        inputEmail.classList.add('margin_bottom')
+        errorMsg.innerHTML = 'Please provide a valid email address'
+        return
+     
+    } else if (inputEmail.value.indexOf(".com") < 0) {
+        inputEmail.classList.add('input_error')
+        inputEmail.classList.add('margin_bottom')
+        errorMsg.innerHTML = 'Please provide a valid email address'
+        return
+    } else {
+        inputEmail.classList.remove('input_error')
+        errorMsg.classList.add('ok_msg')
+        errorMsg.innerHTML = 'Email has been entered ok'
+        inputEmail.value = ''
+        setTimeout(() => {
+            window.location.reload()
+        }, 2000);
+    }
+}) 
+
+//Parte do gráfico
 
 function imgGrafic(grafico1, grafico2) {
     return `
