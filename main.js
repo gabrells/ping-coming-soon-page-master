@@ -33,7 +33,6 @@ form.addEventListener('submit', (event) => {
     }
 }) 
 
-//Parte do gráfico
 
 function imgGrafic(grafico1, grafico2) {
     return `
