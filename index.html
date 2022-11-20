@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -18,32 +18,34 @@
 
 </head>
 <body>
-  <header id="titulo">
-    <h1>ping<em id="ponto">.</em></h1>
-  </header>
-  <main>
-    <h2>We are launching <em>soon!</em></h2>
-    <p>Subscribe and get notified</p>
-    <form>
-      <input type="email" class="email" required placeholder="Your email address...">
-      <input type="submit" class="submit" value="Notify Me">
-    </form>
-     <div id="layout"> 
-    </div>
-  </main>
- <footer>
-    <div class="footer">
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
+  <div>
+    <header id="titulo">
+      <h1>ping<em id="ponto">.</em></h1>
+    </header>
+    <main>
+      <h2>We are launching <em>soon!</em></h2>
+      <p>Subscribe and get notified</p>
+      <form action="#" class="form" id="form">
+        <input type="email" class="email" required placeholder="Your email address..." id="email" alt="Campo para adicionar email">
+        <input type="submit" class="submit" value="Notify Me" id="submit" alt="campo de confirmação">
+        <span class="error_msg" id="errorMsg"></span>
+      </form>
+       <div id="layout" alt="Apresentação dos gráficos."> 
+      </div>
+    </main>
+   <footer>
+      <div class="footer">
+        <a href="https://github.com/gabrells" target="_blank"><i class="fa-brands fa-github" alt="perfil do GitHub"></i></a>
+        <a href="https://www.linkedin.com/in/gabriell-santos/" target="_blank"><i class="fa-brands fa-linkedin" alt="Perfil do Linkedin"></i></a>
 
-    </div>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/gabrells" target="_blank">gabrells</a>.
-    </p>
-    <script src="https://kit.fontawesome.com/2a56b62252.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-  </footer>
+      </div>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/gabrells/ping-coming-soon-page-master" target="_blank">gabrells</a>.
+      </p>
+      <script src="https://kit.fontawesome.com/2a56b62252.js" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+    </footer>
+  </div>
 </body>
 </html>
