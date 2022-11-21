@@ -125,16 +125,16 @@ h2 em {
 
 #layout {
     
-    width: 570px;
-    height: 400px;
+    width: 480px;
+    height: 380px;
     margin: 2%;
-    margin-bottom: 0%;
+    margin-bottom: 2%;
     display: inline-block;
     background-image: url(./layout.svg);
     background-size: cover;
 }
 
-.painel {
+/* .painel {
     padding-top: 50px;
     padding-left: 140px;
     margin: 20px;
@@ -151,7 +151,7 @@ h2 em {
     100% {
         opacity: 4;
     }
-}
+} */
 
 
 /* footer */
@@ -214,12 +214,18 @@ footer p {
     }
 
     #layout {
-
+        position: relative;right: 5px;
+        width: 250px;
+        height: 200px;
         margin: 0px;
         padding: 0%;
     }
-    .painel {
+/*     .painel {
         margin: none;
     
+    } */
+    
+    footer {
+        margin-top: 1rem;
     }
 }
