@@ -12,7 +12,7 @@ The main goals for this challenge were;
 <li>If the field is empty, the message should be <strong>"Whoops! It looks like you forgot to add your email"</strong></li>
 <li>Or if it is not in a correct format, the message must be <strong>"Please provide a valid email address"</strong></li>
 </ul>
-## This challenge was developed with the following technologies;</strong>
+<strong>This challenge was developed with the following technologies;</strong>
 <li>HTML
 <li>CSS
 <li>JavaScript
